@@ -138,13 +138,6 @@ body.down .header-default.clone {
     padding-bottom: 0;
     margin-right: 0;
 }
-
-
-
-
-
-
-
 .burger-icon::before, .burger-icon::after {
     content: "";
     background: #fff;
@@ -208,6 +201,9 @@ body.down .header-default.clone {
     .header-right .social-icons {
         display: none;
     }
+}
+@media only screen and (max-width:767px){
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -460,11 +456,6 @@ button:focus {
     padding: 13px 40px;
     font-size: 16px;
 }
-
-
-
-
-
 /* *************** hero section ************ */
 
 section {
@@ -601,7 +592,7 @@ section {
 }
 
 .featured-post-lg .post-title {
-    font-size: 32px;
+    font-size: 1.7em;
 }
 
 .featured-post-lg .post-title a {
@@ -921,7 +912,7 @@ section {
 .widget {
     border: 1px solid #ffffff;
     padding: 35px 30px;
-    background: #c4f8e28c !important;
+    background: #a9e9cd8c !important;
     margin-bottom: 40px;
     border-radius: 30px !important;
     box-shadow: -6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,0.1);
@@ -1018,8 +1009,6 @@ section {
     padding: 9.5px 36px;
     width: 100%;
 }
-
-
 /* *********** */
 
 footer {
@@ -1058,6 +1047,16 @@ footer .footer-inner .copyright {
 }
 
 /* *********** responsiveness **************** */
+@media only screen and (max-width: 767px){
+    .widget{
+        margin: 0.7rem 3rem;
+    }
+}
+@media only screen and (max-width: 375px){
+    .widget{
+        margin: 1rem 0.5rem;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     .inner-wrapper-sticky {
