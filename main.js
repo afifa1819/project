@@ -28,15 +28,7 @@ $(function(){
         $(".canvas-menu").removeClass("open");
         $(".main-overlay").removeClass("active");
     });
-    // loader tab pane 
-    $('button[data-bs-toggle="tab"]').on('click', function() {
-        $(".tab-pane").addClass("loading");
-        $(".lds-dual-ring").addClass("loading");
-        setTimeout(function () {
-            $(".tab-pane").removeClass("loading");
-            $(".lds-dual-ring").removeClass("loading");
-        }, 500);
-    });
+
     // share toggle button 
     $(".post button.toggle-button").each(function() {
         $(this).on('click', function(e){
