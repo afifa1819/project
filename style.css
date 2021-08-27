@@ -1079,7 +1079,7 @@ section {
 
 .widget {
     padding: 35px 30px;
-   
+    margin-top:1.3rem;
     border: 1px solid #80ff72;
     margin-bottom: 40px;
     border-radius: 30px !important;
