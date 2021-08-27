@@ -13,7 +13,7 @@ $(function(){
     "use strict";
 
     $('.sidebar').stickySidebar({
-        topSpacing : 60,
+        topSpacing : 130,
         bottomSpacing : 30,
         containerSelector : '.main-content',
     });
