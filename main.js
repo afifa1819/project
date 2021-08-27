@@ -16,6 +16,7 @@ $(function(){
         topSpacing : 115,
         bottomSpacing : 30,
         containerSelector : '.main-content',
+         minWidth: 992
     });
     $("button.burger-menu").on('click', function(){
         $(".canvas-menu").toggleClass("open");
