@@ -13,22 +13,18 @@ $(function(){
     "use strict";
 
     $('.sidebar').stickySidebar({
-        topSpacing : 130,
+        topSpacing : 115,
         bottomSpacing : 30,
         containerSelector : '.main-content',
     });
-
-
     $("button.burger-menu").on('click', function(){
         $(".canvas-menu").toggleClass("open");
         $(".main-overlay").toggleClass("active");
     });
-
     $(".canvas-menu .btn-close, .main-overlay").on('click', function() {
         $(".canvas-menu").removeClass("open");
         $(".main-overlay").removeClass("active");
     });
-
     // share toggle button 
     $(".post button.toggle-button").each(function() {
         $(this).on('click', function(e){
