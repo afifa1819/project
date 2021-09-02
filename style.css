@@ -125,15 +125,27 @@ body.down .header-default.clone {
 }
 
 
+
 .navbar-brand {
     color: #203656;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 1.8px;
+    font-family: 'Chuterolk', sans-serif;
+    src: url(css/fonts/CHUTEROLK\ Rounded.ttf);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     padding-top: 0;
+    font-weight: 800;
     padding-bottom: 0;
+    line-height: 1.4rem;
     margin-right: 0;
 }
+.navbar-brand span{
+    font-size: 0.8rem;
+    position: absolute;
+    margin:0.4rem 0 0.1rem 0.1rem;
+    transform: translateX(-0.1rem);
+}
+
 /***active-link**/
 .active-link{
     position: relative;
@@ -459,7 +471,7 @@ button:focus {
 
 .btn-default:hover {
     display: block;
-    transform: scale(0.98);
+    transform: scale(1);
     color: #fff;
     background-position: right center;
 }
@@ -1077,11 +1089,13 @@ section {
 
 /* ************** */
 
+
 .widget {
     padding: 35px 30px;
-
+   
     border: 1px solid #80ff72;
     margin-bottom: 40px;
+  
     border-radius: 30px !important;
     box-shadow: -6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,0.1);
 }
