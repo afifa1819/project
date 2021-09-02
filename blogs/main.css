@@ -209,12 +209,22 @@ body.down .header-default.clone {
 
 .navbar-brand {
     color: #203656;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 1.8px;
+    font-family: 'Chuterolk', sans-serif;
+    src: url(css/fonts/CHUTEROLK\ Rounded.ttf);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     padding-top: 0;
+    font-weight: 800;
     padding-bottom: 0;
+    line-height: 1.4rem;
     margin-right: 0;
+}
+.navbar-brand span{
+    font-size: 0.8rem;
+    position: absolute;
+    margin:0.4rem 0 0.1rem 0.1rem;
+    transform: translateX(-0.1rem);
 }
 
 .burger-icon::before, .burger-icon::after {
@@ -458,6 +468,16 @@ button:focus {
     outline: none;
 }
 
+
+.inner:hover img {
+       -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transition-duration: 1000ms;
+                transition-duration: 1000ms;
+        -webkit-transition-property: all;
+        transition-property: all;
+      
+}
 .icon-button:hover {
     background-position: bottom center;
 }
