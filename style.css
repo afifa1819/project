@@ -123,9 +123,6 @@ body.down .header-default.clone {
     color: #203656;
    
 }
-
-
-
 .navbar-brand {
     color: #203656;
     font-family: 'Chuterolk', sans-serif;
@@ -162,14 +159,14 @@ body.down .header-default.clone {
     border-radius: 50%;
 }
 
-.burger-icon::before, .burger-icon::after {
-    content: "";
-    background: #fff;
+.burger-icon{
+  
+    color:  #57CC99 ;
     display: block;
     margin: auto;
-    height: 1px;
-    width: 15px;
+  font-size: 1.8rem;
 }
+
 
 .burger-icon::before {
     margin-bottom: 6px;
@@ -231,11 +228,12 @@ body.down .header-default.clone {
 }
 
 @media only screen and (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: none;
+    .navbar .nav-item  {
+        display: block;
         animation: growOut 300ms ease-in-out forwards;
         transform-origin: top center;
     }
+
     @keyframes growOut {
         0% {
             transform: scale(0);
@@ -247,12 +245,7 @@ body.down .header-default.clone {
             transform: scale(1);
         }
     }
-    .navbar .nav-item:hover .dropdown-menu {
-        display: block;
-    }
-    .navbar .nav-item .dropdown-menu {
-        margin-top: 0;
-    }
+  
 }
 
 button {
@@ -265,20 +258,13 @@ button:focus {
 }
 
 .icon-button {
-    color: #fff;
     border: 0;
-    border-radius: 50%;
-    background-image: linear-gradient(315deg, #38A3A5 0%, #57CC99 74%);
-    background-size: auto 200%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     height: 37px;
     line-height: 39px;
     text-align: center;
     vertical-align: middle;
-    width: 37px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 50px;
+    background-color: white;
     transition: all 0.2s ease-in-out;
     outline: none;
 }
@@ -401,27 +387,9 @@ button:focus {
     color: #57CC99;
 }
 
-.canvas-menu .vertical-menu li.active .submenu a {
-    color: #79889e;
-}
 
-.canvas-menu .vertical-menu li.active .submenu a:hover {
-    color: #203656;
-}
 
-.canvas-menu .submenu {
-    display: none;
-    padding: 10px 20px;
-}
 
-.canvas-menu .submenu li {
-    padding: 5px 0;
-}
-
-.canvas-menu .submenu li::after {
-    content: "";
-    display: none;
-}
 
 .canvas-menu .vertical-menu li .switch {
     border: 1px solid #ebebeb;
@@ -1088,8 +1056,6 @@ section {
 }
 
 /* ************** */
-
-
 .widget {
     padding: 35px 30px;
    
@@ -1116,9 +1082,6 @@ section {
     font-size: 20px;
     margin: 0;
 }
-
-
-
 .widget ul.list {
     list-style: none;
     padding: 0;
